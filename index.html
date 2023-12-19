@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Yazhini's veg&fruits shop</title>
+</head>
+<body>
+    <div class="container">
+	<h1>Yazhini's veg&fruits shop</h1>
+        <h2>Vegetables and Fruits Bill</h2>
+	<h3>Items</h3>
+        <div id="items-list">
+            <div class="item">
+                <span>Carrots</span>
+                <input type="number" id="carrots" placeholder="Quantity">
+            </div>
+            <div class="item">
+                <span>Apples</span>
+                <input type="number" id="apples" placeholder="Quantity">
+            </div>
+            <div class="item">
+                <span>Bananas</span>
+                <input type="number" id="bananas" placeholder="Quantity">
+            </div>
+            <div class="item">
+                <span>Tomatoes</span>
+                <input type="number" id="tomatoes" placeholder="Quantity">
+            </div>
+	     <div class="item">
+                <span>Oranges</span>
+                <input type="number" id="oranges" placeholder="Quantity">
+            </div>
+           
+        </div>
+        <div id="total">Total: Rs:0.00</div>
+        <button onclick="calculateTotal()">Calculate Total</button>
+        <button onclick="processPayment()">Process Payment</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
